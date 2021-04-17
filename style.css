@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+#pageContainer {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+}
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+}
+header ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+header ul li a {
+  width: 32px;
+  height: 32px;
+}
+header ul li.textLink > * {
+  margin: 0 5px;
+  display: inline-block;
+}
+header ul li a .allApp {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+header ul li a .allApp .blocks {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #5f6368;
+}
+header a.Y_user img {
+  width: 32px;
+  border-radius: 50%;
+}
+main {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+main .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  font-size: small;
+}
+main .content form {
+  height: 140px;
+}
+main .content form .inputText input {
+  border-radius: 30px;
+  height: 44px;
+  width: 582px;
+  outline: none;
+}
+.searchIcon {
+  position: absolute;
+  width: 30px;
+}
+main .content form .button {
+  display: grid;
+  grid-template-columns: auto 143px 143px auto;
+  grid-template-rows: auto 58px auto;
+  grid-template-areas:
+    ". . . ."
+    ". btnLeft btnRight ."
+    ". . . .";
+  height: 88px;
+}
+main .content form .button > div {
+  display: grid;
+  place-items: center;
+}
+main .content form .button .btnLeft {
+  grid-area: btnLeft;
+}
+main .content form .button .btnRight {
+  grid-area: btnRight;
+}
+footer {
+  width: 100%;
+  background: #f2f2f2;
+}
+footer .up {
+  height: 49px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .down {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .down ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
